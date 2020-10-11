@@ -1,7 +1,7 @@
 <template>
 <section class="accounts">
 	<BankAccount v-for="account in accounts" v-bind:key="account" />
-	<button @click="accounts.push('next')"></button>
+	<button class="addAccount" @click="accounts.push('next')">Add an account</button>
 </section>
 </template>
 
@@ -26,6 +26,11 @@ export default class AccountCollection extends Vue {
 	.accounts {
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
 		flex-wrap: wrap;
+	}
+	.addAccount {
+		height: fit-content;
+		padding: 1rem 2rem;
 	}
 </style>

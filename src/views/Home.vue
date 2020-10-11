@@ -1,6 +1,9 @@
 <template>
 	<div class="home">
-		<img alt="Vue logo" src="../assets/logo.png" />
+		<header>
+			<h1>On Balance</h1>
+			<p>A calculator to compare combinations of interest</p>
+		</header>
 		<AccountCollection />
 	</div>
 </template>
