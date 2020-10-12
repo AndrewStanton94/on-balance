@@ -81,15 +81,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class BankAccount extends Vue {
 	@Prop() private accountInfo!: Object;
 	public data() {
 		return {
-			accountName: "",
-			accountType: "",
+			accountName: '',
+			accountType: '',
 			balance: {
 				min: 0,
 				max: 0,
@@ -97,7 +97,7 @@ export default class BankAccount extends Vue {
 			},
 			interest: {
 				rate: 0,
-				paymentFrequency: "",
+				paymentFrequency: '',
 			},
 		};
 	}

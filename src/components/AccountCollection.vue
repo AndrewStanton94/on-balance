@@ -20,8 +20,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-import BankAccount from "@/components/BankAccount.vue";
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import BankAccount from '@/components/BankAccount.vue';
 
 @Component({
 	components: { BankAccount },
