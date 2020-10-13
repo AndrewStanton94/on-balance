@@ -22,12 +22,13 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import BankAccount from '@/components/BankAccount.vue';
+import { Account } from '@/types';
 
 @Component({
 	components: { BankAccount },
 })
 export default class AccountCollection extends Vue {
-	public get accounts(): Array<Object> {
+	public get accounts(): Account[] {
 		return this.$store.state.accounts.accounts;
 	}
 }

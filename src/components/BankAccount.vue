@@ -82,10 +82,11 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Account } from '@/types';
 
 @Component
 export default class BankAccount extends Vue {
-	@Prop() private accountInfo!: Object;
+	@Prop() private accountInfo!: Account;
 	public data() {
 		return {
 			accountName: '',
